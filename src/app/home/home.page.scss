@@ -1,0 +1,19 @@
+.home-icon-card {
+  flex: 0 0 32%;
+  cursor: pointer;
+  
+    border: 1px solid #dee2e6;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 11px;
+
+  //transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.home-icon-card:hover {
+ // transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.home-icon-card {
+  flex: 0 0 32%; /* roughly 3 cards per row with gap */
+}
