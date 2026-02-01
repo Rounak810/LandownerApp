@@ -1,0 +1,16 @@
+.home-icon-card {
+  flex: 0 0 calc(33.333% - 0.75rem);
+  aspect-ratio: 1 / 1;
+
+  max-width: 100%;   // 🔥 desktop pe limit
+  max-height: 100px;  // 🔥 square lock
+
+  cursor: pointer;
+  border: 1px solid #dee2e6;
+  border-radius: 11px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

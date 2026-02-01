@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      {{ tenant ? 'Edit Tenant' : 'Add Tenant' }}
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="close.emit()">Close</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <form [formGroup]="form" (ngSubmit)="submit()">
+
+    <ion-item>
+      <ion-input
+        label="Name"
+        formControlName="name">
+      </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input
+        label="Email"
+        formControlName="email">
+      </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input
+        label="Phone"
+        formControlName="phone">
+      </ion-input>
+    </ion-item>
+
+    <ion-button expand="block" type="submit">
+      Save
+    </ion-button>
+
+  </form>
+
+</ion-content>
